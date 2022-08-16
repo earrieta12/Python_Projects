@@ -23,7 +23,9 @@ Try to guess what it is. Here are some clues:
 
             ##while len(guess) != NUM_DIGITS or not guess.isdecimal():
             while len(guess) != NUM_DIGITS:
+                print('Please choose a word of 5 letters.')
                 print('Guess #{}: '.format(numGuesses))
+                
                 guess=input('> ')
 
             clues = getClues(guess, secretNum)
@@ -44,7 +46,7 @@ Try to guess what it is. Here are some clues:
 
 def getSecretNum():
     words=[] 
-    with open("holamundo.txt", "r") as tf:
+    with open("palabras.txt", "r") as tf:
         lines = tf.read().split(',')
     
     for line in lines:
