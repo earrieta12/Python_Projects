@@ -74,7 +74,7 @@ def getClues(guess, secretNum):
         elif guess[i] in secretNum:
             clues.append(' - ' + chr(9633))
         elif guess[i] not in secretNum:
-            clues.append('- NA')
+            clues.append(' - NA')
         
     ##if len(clues)== 0:
       ##  return 'Bagels '
